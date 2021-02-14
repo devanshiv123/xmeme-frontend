@@ -19,7 +19,7 @@ export default class memeList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8081/memes')
+    axios.get('https://devanshi-xmeme.herokuapp.com/memes')
       .then(response => {
         this.setState({ memes: response.data })
       })

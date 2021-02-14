@@ -47,7 +47,7 @@ export default class createMeme extends Component {
 
     console.log(meme);
 
-    axios.post('http://localhost:8081/memes',meme)
+    axios.post('https://devanshi-xmeme.herokuapp.com/memes',meme)
       .then(res => console.log(res.data));
 
     window.location = '/';
